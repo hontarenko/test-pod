@@ -9,9 +9,9 @@ spec:
         command: ["tail", "-f", "/dev/null"]
         resources:
             limits:
-              cpu: "400m"
-              memory: "500Mi"
-            requests:
               cpu: "100m"
-              memory: "200Mi"
+              memory: "100Mi"
+            requests:
+              cpu: "10m"
+              memory: "20Mi"
 
