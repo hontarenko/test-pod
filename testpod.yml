@@ -7,9 +7,6 @@ spec:
       - name: testctr
         image: alpine:3.18.2
         command: ["tail", "-f", "/dev/null"]
-        resizePolicy:
-        - resourceName: "memory"
-          restartPolicy: "RestartContainer"
         resources:
             limits:
               cpu: "400m"
