@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: testpod
+spec:
+    containers:
+      - name: testctr
+        image: alpine:3.18.2
+        command: ["tail", "-f", "/dev/null"]
+        resizePolicy:
+        - resourceName: "memory"
+          restartPolicy: "RestartContainer"
+        resources:
+            limits:
+              cpu: "400m"
+              memory: "500Mi"
+            requests:
+              cpu: "100m"
+              memory: "200Mi"
+
