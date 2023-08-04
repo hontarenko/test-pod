@@ -49,8 +49,8 @@ spec:
           image: registry.k8s.io/ubuntu-slim:0.1
           resources:
             requests:
-              cpu: 400m
-              memory: 10Mi
+              cpu: 700m
+              memory: 100Mi
           command: ["/bin/sh"]
           args:
             - "-c"
